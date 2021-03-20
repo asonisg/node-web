@@ -11,4 +11,5 @@ docker tag ${IMAGE}:${GIT_VERSION} ${IMAGE}:latest
 
 # Log in to Docker Hub and push
 echo "redhat123" | docker login -u "asonisg" --password-stdin
+git clean -fd
 docker push ${IMAGE}:${GIT_VERSION}
